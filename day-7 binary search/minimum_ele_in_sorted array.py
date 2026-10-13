@@ -1,16 +1,14 @@
-a = [450, 520, 610, 720, 850, 920, 35, 80, 120, 200, 310]
-left=0
-right=len(a)-1
-minimum=0
-while left<=right:
-    mid=(left+right)//2
-    if mid<minimum:
-        minimum=a[mid]
-    elif mid>minimum:
-        right=mid-1
-        minimum=a[right]
+a = [450, 500, 610, 720, 850, 920, 3, 80, 120, 200, 310]
+
+left = 0
+right = len(a) - 1
+
+while left < right:
+    mid = (left + right) // 2
+
+    if a[mid] > a[right]:
+        left = mid + 1
     else:
-        left=mid+1
-        minimum=a[left]
-print(minimum)
-    
+        right = mid
+
+print("Minimum element:", a[left])
