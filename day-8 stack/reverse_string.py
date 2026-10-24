@@ -1,13 +1,26 @@
-text = "hello"
+# text = "hello"
 
-stack = []
+# stack = []
 
-for ch in text:
+# for ch in text:
+#     stack.append(ch)
+
+# result = ""
+
+# while stack:
+#     result += stack.pop()
+
+# print(result)
+
+a="frog"
+stack=[]
+for ch in a:
     stack.append(ch)
+print(stack)
 
-result = ""
 
+reverse=""
 while stack:
-    result += stack.pop()
-
-print(result)
+    z=stack.pop()
+    reverse=reverse+z
+print(reverse)
