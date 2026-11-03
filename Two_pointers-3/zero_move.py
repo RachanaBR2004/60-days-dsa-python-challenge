@@ -5,4 +5,6 @@ for i in range(len(a)):
         a[left],a[i]=a[i],a[left]
         left+=1
 print(a)
+
+    
     
