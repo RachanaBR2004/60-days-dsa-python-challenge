@@ -1,15 +1,13 @@
-class Solution:
-    def containsDuplicate(self, nums: list[int]) -> bool:
-        count = {}
-
-        for i in nums:
-            if i in count:
-                count[i] += 1
-            else:
-                count[i] = 1
-
-        for key, values in count.items():
-            if values >= 2:
-                return True
-
-        return False
+nums=[1,2,3,5,5,4]
+count = {}
+for i in nums:
+    if i in count:
+        count[i] += 1
+    else:
+        count[i] = 1
+print(count)
+for key, values in count.items():
+     if values >= 2:
+        print("True")
+else:
+    print("False")
